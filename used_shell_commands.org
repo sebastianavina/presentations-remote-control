@@ -1,0 +1,38 @@
+* Abused Commands
+
+This is an small summary of the commands I abused in order to make this utility.
+
+** Search for active evince window
+
+#+NAME: Active Evince
+#+BEGIN_SRC bash
+xdotool search "evince"
+#+END_SRC
+
+** Change slide on evince
+
+#+NAME: Change Slide
+#+BEGIN_SRC bash
+xdotool windowactivate --sync 33554435
+xdotool key ctrl+l
+xdotool type 10
+xdotool key KP_Enter
+#+END_SRC
+
+** Convert open office to pdf in order to get slide images
+
+#+NAME: Convert odp to pdf
+#+BEGIN_SRC bash
+unoconv -f pdf prueba.odp 
+#+END_SRC
+
+
+** Change Slide on libreoffice
+
+#+NAME: Change slide on libreoffice
+#+BEGIN_SRC bash
+xdotool windowactivate --sync 25165872
+xdotool key F5
+xdotool type 2
+xdotool key KP_Enter
+#+END_SRC
