@@ -1,11 +1,14 @@
-* presentations-remote-control
+* Remote control for presentationes
 
 This is a small app that launches a lite webserver in python that uses XDOTool for changing slides.
 
-* Pending stuff
+* TODO Pending stuff
+ - [ ] Browse to presentation on main page
+ - [ ] Generate thumbnails of slides
+ - [ ] Select apps to switch
+ - [ ] Show IP
+ - [ ] Launch Presentation
 
-** TODO [ ] Browse to presentation on main page
-** TODO [ ] Generate thumbnails of slides
-** TODO [ ] Select apps to switch
-** TODO [ ] Show IP
-** TODO [ ] Launch Presentation
+* Video tutorial
+
+Pending
