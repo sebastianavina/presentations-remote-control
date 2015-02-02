@@ -1,14 +1,18 @@
 from bottle import route, run, template, static_file
 
 import funciones_xdo
+from lecture import lecture
 
+# Static dir for serving styles and stuff.
 @route('/static/:path#.+#', name='static')
 def static(path):
     return static_file(path, root='static')
 
+# Main page
 @route('/')
-def index():
-    return template('<b>Hello {{name}}</b>!', name="hola")
+def index()
+:
+    return template("views/principal.htm", name="hola")
 
 @route('/prepare/<name>')
 def prepare(name):
