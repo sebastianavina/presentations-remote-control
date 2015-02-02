@@ -1,0 +1,14 @@
+<b>Hello {{name}}</b>!
+
+<h1>Selecciona un archivo</h1>
+
+<form method="post" id="none" action="/">
+  <input type="text" name="presentacion" value="/home/sebastianavina/Desktop/Short-refcard.pdf" />
+  <input type="submit" name="Enviar" value="Enviar" />
+  <input type="hidden" name="xdo" value="{{ xdo }}" />
+</form>
+
+<h1>Selecciona Ventana</h1>
+% for ventana in ventanas: 
+<a href="/?xdo={{ventana}}">{{ ventana }}</a>
+% end
